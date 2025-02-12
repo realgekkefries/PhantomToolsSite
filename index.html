@@ -75,7 +75,6 @@
       position: relative;
       z-index: 1;
     }
-  </style>
 
 
 
@@ -83,72 +82,66 @@
 
 
 
- </head>
- <body>
-  <div class="animate__animated animate__fadeInDown animate__slower">
-   <div class="box glowing w-full py-3 text-center relative">
-    <h1 class="text-lg">
-     All our tools are Up-To-Date. Place your order today!
-    </h1>
-   </div>
-  </div>
-  <nav class="navbar navbar-expand-lg fixed-top animate__animated animate__fadeInDown animate__slow custom_nb">
-   <div class="container">
-    <div class="navbar-wrapper">
-     <!-- Company Name -->
-     <a class="navbar-brand" href="/">
+ @media (max-width: 768px) {
+  .navbar-toggler::after {
+    content: '➤';
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 1.2rem;
+    pointer-events: none;
+  }
+}
+</style>
+</head>
+<body>
+<div class="animate__animated animate__fadeInDown animate__slower">
+<div class="box glowing w-full py-3 text-center relative">
+  <h1 class="text-lg">All our tools are Up-To-Date. Place your order today!</h1>
+</div>
+</div>
+<nav class="navbar navbar-expand-lg fixed-top animate__animated animate__fadeInDown animate__slow custom_nb">
+<div class="container">
+  <div class="navbar-wrapper">
+    <!-- Company Name -->
+    <a class="navbar-brand" href="/">
       <img alt="" src="assets/images/logo.png"/>
-     </a>
-     <!-- For small screens -->
-     <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler collapsed" data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button">
-      <span class="navbar-toggler-icon">
-      </span>
-     </button>
-     <!-- For normal screens -->
-     <div class="navbar-collapse justify-content-between w-100 collapse" id="navbarNav">
+    </a>
+    <!-- For small screens -->
+    <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler collapsed" data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- For normal screens -->
+    <div class="navbar-collapse justify-content-between w-100 collapse" id="navbarNav">
       <ul class="navbar-nav">
-
         <li class="nav-item">
-          <a class="nav-link text-white" href="#home">
-           Home
-          </a>
-         </li>
-
-
-       <li class="nav-item">
-        <a class="nav-link text-white" href="#features">
-         Features
-        </a>
-       </li>
-
-       <li class="nav-item">
-        <a class="nav-link text-white" href="#products">
-         Products
-        </a>
-       </li>
-
-       <li class="nav-item">
-        <a class="nav-link text-white" href="#contact">
-         Contact
-        </a>
-       </li>
-       <li class="nav-item">
-        <a class="nav-link text-white" href="#tos">
-         TOS
-        </a>
-       </li>
+          <a class="nav-link text-white" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#features">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#products">Products</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#contact">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#tos">TOS</a>
+        </li>
       </ul>
       <div class="buttons">
-       <a class="btn btn-gradient" href="https://discord.gg/7u9XaEkrTm">
-        <i class="fa-brands fa-discord h-75 g-3" style="color: #ffffff">
-        </i>
-        Discord
-       </a>
+        <a class="btn btn-gradient" href="https://discord.gg/7u9XaEkrTm">
+          <i class="fa-brands fa-discord h-75 g-3" style="color: #ffffff"></i>
+          Discord
+        </a>
       </div>
-     </div>
     </div>
-   </div>
-  </nav>
+  </div>
+</div>
+</nav>
 
   <section class="home" id="home" style="margin-top: -2rem">
     <div class="container">
