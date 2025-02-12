@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Phantom - Discord Tools Provider
+  </title>
+  <link href="assets/images/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+  <link href="https://cdn.sell.app/embed/style.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet"/>
+  <link href="assets/css/main.css" rel="stylesheet"/>
+  <link href="assets/css/index.css" rel="stylesheet"/>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <style>
+    .shine-container {
+      position: relative;
+      display: inline-block;
+      overflow: hidden;
+    }
+
+    .shine-container::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 50%;
+      height: 100%;
+      background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.4) 50%, 
+        rgba(255, 255, 255, 0) 100%
+      );
+      transform: skewX(-25deg);
+      animation: shine 3s infinite;
+      z-index: 2; 
+    }
+
+
+    @keyframes shine {
+      100% {
+        left: 200%;
+      }
+    }
+
+    .hero_img {
+      max-width: 100%;
+      height: auto;
+      position: relative;
+      z-index: 1;
+    }
+  </style>
+
+
+
+
+
+
+
+ </head>
+ <body>
+  <div class="animate__animated animate__fadeInDown animate__slower">
+   <div class="box glowing w-full py-3 text-center relative">
+    <h1 class="text-lg">
+     All our tools are Up-To-Date. Place your order today!
+    </h1>
+   </div>
+  </div>
+  <nav class="navbar navbar-expand-lg fixed-top animate__animated animate__fadeInDown animate__slow custom_nb">
+   <div class="container">
+    <div class="navbar-wrapper">
+     <!-- Company Name -->
+     <a class="navbar-brand" href="/">
+      <img alt="" src="assets/images/logo.png"/>
+     </a>
+     <!-- For small screens -->
+     <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler collapsed" data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button">
+      <span class="navbar-toggler-icon">
+      </span>
+     </button>
+     <!-- For normal screens -->
+     <div class="navbar-collapse justify-content-between w-100 collapse" id="navbarNav">
+      <ul class="navbar-nav">
+
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#home">
+           Home
+          </a>
+         </li>
+
+
+       <li class="nav-item">
+        <a class="nav-link text-white" href="#features">
+         Features
+        </a>
+       </li>
+
+       <li class="nav-item">
+        <a class="nav-link text-white" href="#products">
+         Products
+        </a>
+       </li>
+
+       <li class="nav-item">
+        <a class="nav-link text-white" href="#contact">
+         Contact
+        </a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link text-white" href="#tos">
+         TOS
+        </a>
+       </li>
+      </ul>
+      <div class="buttons">
+       <a class="btn btn-gradient" href="https://discord.gg/7u9XaEkrTm">
+        <i class="fa-brands fa-discord h-75 g-3" style="color: #ffffff">
+        </i>
+        Discord
+       </a>
+      </div>
+     </div>
+    </div>
+   </div>
+  </nav>
+
+  <section class="home" id="home" style="margin-top: -2rem">
+    <div class="container">
+     <div class="row">
+      <div class="col-12 col-md-6">
+       <h1 class="main_hero_text mt-5">
+        High Quality Tools
+       </h1>
+       <p class="hero_text">
+        <span>
+         Phantom
+        </span>
+        provides a unique and professional
+        <span>
+         Discord Tool Service
+        </span>
+        at a significantly lower price compared to regular tools
+       </p>
+       <a class="btn btn-gradient" href="#products">
+        Our Products
+       </a>
+      </div>
+      <div class="col-12 col-md-6">
+       <div class="shine-container">
+        <img alt="Me Image" class="hero_img" src="assets/images/tool.png"/>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+ 
+   <section class="features" id="features" style="margin-top: -3rem">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 mb-5">
+                <h2 class="section-title">
+                    Features
+                </h2>
+                <h6 class="section-subtitle">
+                    What makes Phantom stand out?
+                </h6>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="card">
+                    <i class="fa fa-bolt"></i>
+                    <p class="features-subtitle">
+                        LIGHTNING-FAST
+                    </p>
+                    <p class="features-text">
+                        Phantom delivers your product instantly. Whether it's boost or raiding tools, your order is processed and ready within minutes of payment confirmation.
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="card">
+                    <i class="fas fa-shield-alt"></i>
+                    <p class="features-subtitle">
+                        PREMIUM QUALITY
+                    </p>
+                    <p class="features-text">
+                        Phantom offers top-tier tools designed for efficiency and reliability. From raiding to boosting, our tools are built to outperform the competition.
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="card">
+                    <i class="fas fa-wallet"></i>
+                    <p class="features-subtitle">
+                        AFFORDABLE
+                    </p>
+                    <p class="features-text">
+                        Get the best value for your money with Phantom. Our tools are priced competitively, ensuring premium quality without breaking the bank.
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="card">
+                    <i class="fas fa-rocket"></i>
+                    <p class="features-subtitle">
+                        TRUSTED BY MANY
+                    </p>
+                    <p class="features-text">
+                        We prioritize your trust and satisfaction.
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="card">
+                    <i class="fas fa-sync"></i>
+                    <p class="features-subtitle">
+                        CONSTANT UPDATES
+                    </p>
+                    <p class="features-text">
+                        Our tools are regularly updated to ensure compatibility with Discord's latest changes, so you always have access to the best features.
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="card">
+                    <i class="fas fa-lock"></i>
+                    <p class="features-subtitle">
+                        SECURE & UNDETECTED
+                    </p>
+                    <p class="features-text">
+                        Phantom tools are designed to be secure and unflagged, ensuring your activities remain private and undetected.
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="card">
+                    <i class="fas fa-headset"></i>
+                    <p class="features-subtitle">
+                        24/7 SUPPORT
+                    </p>
+                    <p class="features-text">
+                        Our support team is available around the clock to assist you with any issues or questions you may have.
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="card">
+                    <i class="fas fa-users"></i>
+                    <p class="features-subtitle">
+                        USER-FRIENDLY
+                    </p>
+                    <p class="features-text">
+                        Phantom tools are designed to be easy to use, even for beginners, while still offering advanced features for experienced users.
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="card">
+                    <i class="fas fa-gem"></i>
+                    <p class="features-subtitle">
+                        EXCLUSIVE FEATURES
+                    </p>
+                    <p class="features-text">
+                        Phantom offers unique, cutting-edge features that you won't find anywhere else, giving you an edge in your Discord activities.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+  <section class="products" id="products" style="margin-top: 5rem">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 mb-5">
+          <h2 class="section-title">
+            Products
+          </h2>
+          <h6 class="section-subtitle">
+            Products We Offer
+          </h6>
+        </div>
+        <div class="col-12">
+          <div class="products-category">
+            <button class="category-button highlighted" data-target="raider">
+              Raider
+            </button>
+            <button class="category-button" data-target="tokens">
+              Tokens
+            </button>
+          </div>
+        </div>
+        <div class="product_content four-cards-product" id="raider" style="display: block;">
+          <div class="product-box">
+            <p class="product_name">
+              Phantom Raider - Lifetime
+            </p>
+            <p class="product_prices">
+              €10.00
+            </p>
+            <ul class="product_list">
+              <li class="product_list_text">
+                <i class="fa-solid fa-square-check">
+                </i>
+                Advanced Tool
+              </li>
+              <li class="product_list_text">
+                <i class="fa-solid fa-square-check">
+                </i>
+                High Efficiency
+              </li>
+              <li class="product_list_text">
+                <i class="fa-solid fa-square-check">
+                </i>
+                Lifetime Updates
+              </li>
+
+
+              <li class="product_list_text">
+                <i class="fa-solid fa-square-check">
+                </i>
+                Unflagged
+              </li>
+
+              <li class="product_list_text">
+                <i class="fa-solid fa-square-check">
+                </i>
+                All Features Included
+              </li>
+
+              <li class="product_list_text">
+                <i class="fa-solid fa-square-check">
+                </i>
+                Full Access For Lifetime!
+              </li>
+
+            </ul>
+            <button class="btn btn-gradient" data-sell-darkmode="true" data-sell-product="273687" data-sell-store="55881" data-sell-theme="#030303">
+              Purchase
+            </button>
+          </div>
+          <div class="product-box">
+            <p class="product_name">
+              Phantom Raider - 1 Month
+            </p>
+            <p class="product_prices">
+              €7.00
+            </p>
+            <ul class="product_list">
+              <li class="product_list_text">
+                <i class="fa-solid fa-square-check">
+                </i>
+                Advanced Tool
+              </li>
+              <li class="product_list_text">
+                <i class="fa-solid fa-square-check">
+                </i>
+                High Efficiency
+              </li>
+              <li class="product_list_text">
+                <i class="fa-solid fa-square-check">
+                </i>
+                Lifetime Updates
+              </li>
+              <li class="product_list_text">
+                <i class="fa-solid fa-square-check">
+                </i>
+                Unflagged
+              </li>
+
+              <li class="product_list_text">
+                <i class="fa-solid fa-square-check">
+                </i>
+                All Features Included
+              </li>
+
+              <li class="product_list_text">
+                <i class="fa-solid fa-square-check">
+                </i>
+                Full Access For 1 Month
+              </li>
+
+
+            </ul>
+            <button class="btn btn-gradient" data-sell-darkmode="true" data-sell-product="275922" data-sell-store="55881" data-sell-theme="#030303">
+              Purchase
+            </button>
+          </div>
+          <div class="product-box">
+            <p class="product_name">
+              Phantom Raider - 1 Week
+            </p>
+            <p class="product_prices">
+              €5.00
+            </p>
+            <ul class="product_list">
+              <li class="product_list_text">
+                <i class="fa-solid fa-square-check">
+                </i>
+                Advanced Tool
+              </li>
+              <li class="product_list_text">
+                <i class="fa-solid fa-square-check">
+                </i>
+                High Efficiency
+              </li>
+              <li class="product_list_text">
+                <i class="fa-solid fa-square-check">
+                </i>
+                Lifetime Updates
+              </li>
+              <li class="product_list_text">
+                <i class="fa-solid fa-square-check">
+                </i>
+                Unflagged
+              </li>
+
+              <li class="product_list_text">
+                <i class="fa-solid fa-square-check">
+                </i>
+                All Features Included
+              </li>
+
+              <li class="product_list_text">
+                <i class="fa-solid fa-square-check">
+                </i>
+                Full Access For 1 Week
+              </li>
+
+            </ul>
+            <button class="btn btn-gradient" data-sell-darkmode="true" data-sell-product="275923" data-sell-store="55881" data-sell-theme="#030303">
+              Purchase
+            </button>
+          </div>
+        </div>
+        <div class="product_content four-cards-product" id="tokens" style="display: none;">
+          <div class="product-box">
+            <p class="product_name">
+              FV Tokens
+            </p>
+            <p class="product_prices">
+              €0.08
+            </p>
+            <ul class="product_list">
+              <li class="product_list_text">
+                <i class="fa-solid fa-square-check">
+                </i>
+                High Quality
+              </li>
+              <li class="product_list_text">
+                <i class="fa-solid fa-square-check">
+                </i>
+                Reliable Source
+              </li>
+              <li class="product_list_text">
+                <i class="fa-solid fa-square-check">
+                </i>
+                Instant Delivery
+              </li>
+            </ul>
+            <button class="btn btn-gradient" data-sell-darkmode="true" data-sell-product="789012" data-sell-store="8862" data-sell-theme="#030303">
+              Purchase
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="ad-warning" style="display: none">
+    </div>
+  </section>
+
+
+
+  <script>
+    document.querySelectorAll('.category-button').forEach(button => {
+      button.addEventListener('click', () => {
+        const target = button.getAttribute('data-target');
+        document.querySelectorAll('.product_content').forEach(content => {
+          content.style.display = 'none'; 
+        });
+        document.getElementById(target).style.display = 'flex';
+
+        document.querySelectorAll('.category-button').forEach(btn => {
+          btn.classList.remove('highlighted');
+        });
+        button.classList.add('highlighted');
+      });
+    });
+
+    document.getElementById('raider').style.display = 'flex';
+
+  </script>
+
+
+
+
+
+
+  <section class="features" id="contact">
+   <div class="container">
+    <div class="row">
+     <div class="col-12 mb-4">
+      <div class="contact-card">
+       <img alt="" class="wumpus" src="assets/images/wumpus.png"/>
+       <div class="content">
+        <h2 class="contact_title">
+         Contact Us
+        </h2>
+        <p class="contact_text">
+         Get in touch with us directly using the methods below
+        </p>
+        <div class="buttons">
+         <a class="glow-on-hover" href="https://discord.gg/7u9XaEkrTm" target="_blank">
+          <i class="fa-brands fa-discord" style="color: #ffffff">
+          </i>
+          Discord
+         </a>
+         <a class="glow-on-hover" href="https://phantomtools.sell.app/" target="_blank">
+          <i class="fa-brands fa-telegram" style="color: #ffffff">
+          </i>
+          Telegram
+         </a>
+         <a class="glow-on-hover" href="mailto:krodersam@gmail.com" target="_blank">
+          <i class="fa-solid fa-envelope" style="color: #ffffff">
+          </i>
+          Email Us
+         </a>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+
+
+  <section class="tos" id="tos" style="margin-top: 5rem">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 mb-5">
+          <h2 class="section-title">
+            Terms of Service
+          </h2>
+          <h6 class="section-subtitle">
+            Please read carefully before using our services.
+          </h6>
+        </div>
+        <div class="col-12">
+          <div class="tos-content">
+            <h4 class="tos-title">1. General</h4>
+            <p class="tos-text">
+              By purchasing from Phantom, you agree to abide by these Terms of Service.
+              We reserve the right to update or modify these terms at any time.
+            </p>
+
+            <h4 class="tos-title">2. Payments & Refunds</h4>
+            <p class="tos-text">
+              All payments are final. Refunds will only be provided in cases where the service was not delivered as promised.
+            </p>
+
+            <h4 class="tos-title">3. Service Usage</h4>
+            <p class="tos-text">
+              You agree to not try crack any of our software. Any violation may result in termination without a refund.
+            </p>
+
+            <h4 class="tos-title">4. Liability</h4>
+            <p class="tos-text">
+              We are not responsible for any actions taken against your account due to the use of our services.
+            </p>
+
+            <h4 class="tos-title">5. Contact</h4>
+            <p class="tos-text">
+              If you have any questions about our Terms of Service, please contact us via 
+              <a href="https://discord.gg/7u9XaEkrTm">Discord Support</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="footer">
+   <div class="container">
+    <div class="row">
+     <div class="col-12">
+      <div class="site-text">
+       <p class="body-2">
+        © 2025 Phantom | All rights reserved.
+       </p>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Modal -->
+  <div class="modal" id="myModal" tabindex="-1">
+   <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content">
+     <!-- Modal Header -->
+     <div class="modal-header">
+      <h4 class="modal-title">
+       Hello there!
+      </h4>
+      <button class="btn-close white" data-bs-dismiss="modal" type="button">
+      </button>
+     </div>
+     <!-- Modal Body -->
+     <div class="modal-body">
+      <p class="mt-2">
+       Please join our Discord server and Telegram. This will ensure you're up-to-date with everything! This is not required, but we do recommend joining. Enjoy shopping!
+      </p>
+      <div class="buttons mb-4" style=" margin-top: 2rem; display: flex; justify-content: space-evenly; ">
+       <a class="discord-btn" href="https://discord.gg/7u9XaEkrTm" target="_blank">
+        <i class="fa-brands fa-discord" style="color: #ffffff">
+        </i>
+        Discord
+       </a>
+       <a class="telegram-btn" href="https://phantomtools.sell.app/" target="_blank">
+        <i class="fa-brands fa-telegram" style="color: #ffffff">
+        </i>
+        Telegram
+       </a>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js">
+  </script>
+  <script src="https://cdn.sell.app/embed/script.js" type="module">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="assets/js/main.js">
+  </script>
+  <script>
+   $(document).ready(function () { var lastScrollTop = 0; $(window).scroll(function () { var scrollTop = $(this).scrollTop(); if (scrollTop > lastScrollTop) { $(".navbar").addClass("transparent"); $(".custom_nb").css("background-color", "transparent"); $(".custom_nb").css("backdrop-filter", "blur(10px)"); $(".custom_nb").css("z-index", "999"); $(".custom_nb").css("margin-top", "0"); } else { $(".navbar").removeClass("transparent"); $(".navbar").css("margin-top", "0"); $(".custom_nb").css("z-index", "999"); } lastScrollTop = scrollTop; var scrollPosition = $(window).scrollTop(); var threshold = 75; if (scrollPosition >= threshold) { $(".navbar").addClass("sticky"); $(".home").css("padding-top", "175px"); } else { $(".navbar").removeClass("sticky"); $(".home").css("padding-top", "75px"); } }); if (window.location.hash) { var hash = window.location.hash; $("html, body").animate( { scrollTop: $(hash).offset().top }, 1000, function () { window.location.hash = hash; },); } });
+  </script>
+  <script>
+   var observer = new MutationObserver(function (mutations) { mutations.forEach(function (mutationRecord) { const warning = document.querySelector("#ad-warning"); if (mutationRecord.target.style.display === "flex") { warning.style.display = "flex"; } else { warning.style.display = "none"; } }); }); var target = document.getElementById("info-spot"); observer.observe(target, { attributes: true, attributeFilter: ["style"], });
+  </script>
+ </body>
+</html>
