@@ -497,9 +497,99 @@
         </div>
       </div>
     </div>
-    <div id="ad-warning" style="display: none">
-    </div>
-  </section>
+        <div id="ad-warning" style="display: none">
+        </div>
+        <!-- Add overlay and modal -->
+        <div class="modal-overlay" id="modalOverlay"></div>
+        <div class="modal-content" id="modalContent">
+            <div class="modal-header">
+                <h5 class="modal-title">Complete Your Purchase</h5>
+                <button class="modal-close" id="closeModal">&times;</button>
+            </div>
+            <div class="modal-body">
+
+                <div class="loading-spinner"></div>
+                <p>Redirecting to secure checkout...</p>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(5px);
+            z-index: 1000;
+            display: none;
+        }
+
+        .modal-content {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            z-index: 1001;
+            display: none;
+            width: 90%;
+            max-width: 500px;
+        }
+
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .modal-close {
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        .loading-spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #030303;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 1rem;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+
+    <script>
+        document.querySelectorAll('.btn-gradient').forEach(button => {
+            button.addEventListener('click', (e) => {
+                e.preventDefault();
+                document.getElementById('modalOverlay').style.display = 'block';
+                document.getElementById('modalContent').style.display = 'block';
+            });
+        });
+
+        document.getElementById('modalOverlay').addEventListener('click', () => {
+            document.getElementById('modalOverlay').style.display = 'none';
+            document.getElementById('modalContent').style.display = 'none';
+        });
+
+        document.getElementById('closeModal').addEventListener('click', () => {
+            document.getElementById('modalOverlay').style.display = 'none';
+            document.getElementById('modalContent').style.display = 'none';
+        });
+    </script>
 
 
 
