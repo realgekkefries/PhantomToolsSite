@@ -501,7 +501,25 @@
     </div>
   </section>
 
+  <script>
+    document.querySelectorAll('.category-button').forEach(button => {
+      button.addEventListener('click', () => {
+        const target = button.getAttribute('data-target');
+        document.querySelectorAll('.product_content').forEach(content => {
+          content.style.display = 'none'; 
+        });
+        document.getElementById(target).style.display = 'flex';
 
+        document.querySelectorAll('.category-button').forEach(btn => {
+          btn.classList.remove('highlighted');
+        });
+        button.classList.add('highlighted');
+      });
+    });
+
+    document.getElementById('raider').style.display = 'flex';
+
+  </script>
 
 
   <section class="contact" id="contact" style="margin-top: 5rem">
